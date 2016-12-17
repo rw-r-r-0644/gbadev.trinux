@@ -1,0 +1,25 @@
+This should be rev. 33 from 07-06-2013
+
+Major changes:
+
+Tweaked some files to get rid of different compiler warnings.
+Added a new powerpc_upload_stub_1800_2 that simply turns on the sensorbar.
+Added a sync to the powerpc_upload_stub_100 (left the isync in).
+Documented the powerpc_upload_stub_100 assembly.
+
+
+ToDo:
+
+Try to fix the ppc so it proves to be running at least one core.
+
+The stub's should become separate folders with the assembly instructions and their own makefile.
+They should become a binary header that can be uploaded to the correct location.
+
+A nandfs file system should be added so that we can get the 00000003.app from nand.
+
+We should find a way to at least reboot so that we can avoid multiple power cyclings to keep our
+testers happy.
+
+We should modify nswitch so that it can load our armboot.bin without the need of ios 254
+
+(Those will likely keep us busy for the weekend.  :-) )

@@ -1,0 +1,15 @@
+git_version.h
+*.d
+*.bin
+*.elf
+*.map
+*~
+*.o
+.*.swp
+*.bak
+armboot/stub.h
+armboot/stub.c
+armboot/stubsb1.h
+armboot/stubsb1.c
+nswitch/source/armboot.h
+nswitch/source/armboot.c

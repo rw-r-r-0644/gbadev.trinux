@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<app version="1.0">
+	<name>3-core IOS203 Installer</name>
+	<version>v8 MOD vWii</version>
+	<release_date>201301161352</release_date>
+	<coder>Dr Clipper, ZRicky11, dmm, FIX94</coder>
+	<short_description>Installs IOS203</short_description>
+	<long_description>Installs a patched IOS58 into the IOS203 slot, remapping syscall 0x4b to run from 0x1000000
+(coder will have to write valid code to that address before reloading to this IOS.)</long_description>
+	<no_ios_reload/>
+</app>

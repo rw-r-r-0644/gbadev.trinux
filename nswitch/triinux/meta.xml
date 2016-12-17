@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<app version="1.0">
+	<name>Triinux</name>
+	<coder>Maxternal/Carver</coder>
+	<version>r1</version>
+	<release_date>20130708182922</release_date>
+	<short_description>Wii/vWii Linux Loader</short_description>
+	<long_description>Put any ppcboot.elf in the same folder on SD and this should load it.
+if not run from SD, it will look for SD:/bootmii/ppcboot.elf
+For the record, Joostin didn't want to change the name to Triinux.
+
+Arguments:
+bootmii= use BootMii IOS (defaults to 1)
+debug= show debug output (defaut's to 0)
+path= for a custom path to the ppcboot.elf file on SD. E.G. path=/apps/triinux/ppcboot.elf</long_description>
+<ahb_access/>
+<no_ios_reload/>
+</app>

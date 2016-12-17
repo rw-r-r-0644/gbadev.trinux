@@ -1,0 +1,6 @@
+This file is a placeholder for the target folder.
+
+Any binaries produced by the make command will end
+up here to be tested and then moved to 'target-release'
+
+Please do not delete this file!

@@ -1,0 +1,28 @@
+config ZCACHE
+	tristate "Dynamic compression of swap pages and clean pagecache pages"
+	depends on (CLEANCACHE || FRONTSWAP) && CRYPTO
+	select XVMALLOC
+	default y
+	help
+	  Zcache doubles RAM efficiency while providing a significant
+	  performance boosts on many workloads.  Zcache uses
+	  compression and an in-kernel implementation of transcendent
+	  memory to store clean page cache pages and swap in RAM,
+	  providing a noticeable reduction in disk I/O.
+
+choice ZCACHE_COMPRESS
+	prompt "compression method"
+	depends on ZCACHE
+	default ZCACHE_LZO
+	help
+	  Select the compression method used by zcache.
+	  LZO is the default. Snappy compresses a bit worse (around ~2%) but
+	  much faster and requires less CPU.
+config ZCACHE_LZO
+	bool "LZO compression"
+	select CRYPTO_LZO
+config ZCACHE_SNAPPY
+	bool "Snappy compression"
+	depends on SNAPPY_COMPRESS
+	depends on SNAPPY_DECOMPRESS
+endchoice

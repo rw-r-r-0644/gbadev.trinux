@@ -1,0 +1,29 @@
+vWii 3-Core Support Development
+#vwii EFNet
+
+  maxternal <maxternal@gmail.com> - developer
+  obcd <obcd007@gmail.com> - developer
+  carver <beneliezer@gmail.com> - linux/server and git repository support
+
+  Shoutout to team f0f for holding our noobish hands through this.
+
+  Special thanks to the following individuals for testing this code:
+   -the_randomizer
+   -rednekcowboy
+   -bubba
+   -hellboy
+
+COMPILING
+---------
+DEVKITPRO (ARM/PPC) are required for these builds.
+Use ./build.sh. For syntax, type command with no arguments.
+
+NOTES
+-----
+1. The build process for nswitch is dependant on the outfiles of raw2c, which
+   are generated when building armboot. The source for nswitch may/may not
+   build properly without first compiling the source for armboot.
+
+2. 'build' is a shell script that will likely only run in unix environments.
+   In order to build on Windows, you will likely have to enter each source tree
+   individually and build manually.

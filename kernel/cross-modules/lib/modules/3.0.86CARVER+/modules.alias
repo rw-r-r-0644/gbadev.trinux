@@ -1,0 +1,7 @@
+# Aliases extracted from modules themselves.
+alias sdio:c00v*d* bcm40181
+alias sdio:c*v02D0d4319* bcm40181
+alias sdio:c*v02D0d4329* bcm40181
+alias sdio:c*v02D0d0493* bcm40181
+alias sdio:c*v02D0d0492* bcm40181
+alias sdio:c*v02D0d0000* bcm40181
